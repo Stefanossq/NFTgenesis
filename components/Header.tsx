@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Header: React.FC = () => {
@@ -7,7 +6,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         <h1 
           className="text-4xl md:text-5xl font-bold font-orbitron tracking-widest uppercase"
-          style={{ textShadow: '0 0 8px rgba(0, 255, 255, 0.3), 0 0 12px rgba(0, 255, 255, 0.2)' }}
+          style={{ textShadow: '0 0 8px rgba(0, 255, 255, 0.6), 0 0 16px rgba(0, 255, 255, 0.4), 0 0 24px rgba(0, 255, 255, 0.2)' }}
         >
           AI NFT <span className="text-cyan-400">Genesis</span>
         </h1>

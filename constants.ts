@@ -1,4 +1,3 @@
-
 import { Character } from './types';
 
 export const PRELOADED_CHARACTERS: Character[] = [
@@ -28,6 +27,5 @@ export const PRELOADED_CHARACTERS: Character[] = [
   }
 ];
 
-// Usaremos uma imagem de placeholder para os personagens pré-carregados.
-// Esta função será chamada no componente para evitar armazenar grandes strings base64 aqui.
-export const getPlaceholderImage = (seed: string): string => `https://picsum.photos/seed/${seed}/512/512`;
+// Usaremos uma imagem de placeholder mais temática para os personagens pré-carregados.
+export const getPlaceholderImage = (seed: string): string => `https://robohash.org/${encodeURIComponent(seed)}?set=set1&size=512x512&bgset=bg1`;

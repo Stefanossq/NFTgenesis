@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Character } from '../types';
 import { getPlaceholderImage } from '../constants';
@@ -16,7 +15,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({ character, onSelec
   return (
     <div 
       onClick={() => onSelect(character)}
-      className="group bg-gray-800 rounded-lg overflow-hidden border-2 border-gray-700 hover:border-cyan-400 cursor-pointer transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-cyan-400/40"
+      className="group bg-gray-800 rounded-lg overflow-hidden border-2 border-gray-700 hover:border-cyan-400 cursor-pointer transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
     >
       <div className="relative aspect-square">
         <img src={imageUrl} alt={character.name} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />

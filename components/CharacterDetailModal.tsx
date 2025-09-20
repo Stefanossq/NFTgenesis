@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Character } from '../types';
 import { getPlaceholderImage } from '../constants';
@@ -20,7 +19,7 @@ export const CharacterDetailModal: React.FC<CharacterDetailModalProps> = ({ char
       onClick={onClose}
     >
       <div 
-        className="bg-gray-900 border border-cyan-400/30 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col md:flex-row overflow-hidden animate-fade-in-up"
+        className="bg-gray-900 border border-cyan-400/30 rounded-xl shadow-2xl shadow-[0_0_25px_rgba(34,211,238,0.2)] w-full max-w-4xl max-h-[90vh] flex flex-col md:flex-row overflow-hidden animate-fade-in-up"
         onClick={e => e.stopPropagation()}
       >
         <div className="w-full md:w-1/2 relative">
@@ -37,7 +36,7 @@ export const CharacterDetailModal: React.FC<CharacterDetailModalProps> = ({ char
             </div>
           </div>
           <div className="mt-6 flex-shrink-0">
-            <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-bold py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50">
+            <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-bold py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[0_0_20px_rgba(8,145,178,0.7)]">
               Comprar NFT
             </button>
           </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SearchIcon } from './icons/SearchIcon';
 
@@ -19,9 +18,9 @@ const SortButton: React.FC<{
 }> = ({ label, order, currentOrder, onClick }) => (
   <button
     onClick={() => onClick(order)}
-    className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+    className={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-200 ${
       currentOrder === order
-        ? 'bg-cyan-500 text-black'
+        ? 'bg-cyan-500 text-black shadow-[0_0_10px_rgba(8,145,178,0.7)]'
         : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
     }`}
   >

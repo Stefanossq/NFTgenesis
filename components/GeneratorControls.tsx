@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { SparklesIcon } from './icons/SparklesIcon';
 
@@ -50,7 +49,7 @@ export const GeneratorControls: React.FC<GeneratorControlsProps> = ({ onGenerate
           <button
             type="submit"
             disabled={isLoading || !prompt.trim()}
-            className="flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 disabled:bg-gray-600 disabled:cursor-not-allowed text-black font-bold py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-md hover:shadow-cyan-400/30"
+            className="flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 disabled:bg-gray-600 disabled:cursor-not-allowed text-black font-bold py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 disabled:scale-100 shadow-md hover:shadow-[0_0_15px_rgba(34,211,238,0.6)]"
           >
             {isLoading ? (
               <>
